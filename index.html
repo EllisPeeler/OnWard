@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Replaced by `flutter build web --base-href` (e.g. /onward/ on GitHub Pages). -->
+  <base href="/OnWard/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="OnWard — areas, projects, goals, events and captures in a Markdown vault, synced with Google Drive.">
+  <meta name="theme-color" content="#0B0C0E">
+
+  <!-- Add to Home Screen -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="OnWard">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>OnWard</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body { margin: 0; height: 100%; background: #0B0C0E; }
+    #loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+    #loading img { width: 72px; height: 72px; border-radius: 16px; opacity: .9; }
+  </style>
+</head>
+<body>
+  <div id="loading"><img src="icons/Icon-192.png" alt="OnWard"></div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var l = document.getElementById('loading');
+      if (l) l.remove();
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
